@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Avantaa Infinite Possibilities</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="img/Anantaa_vert_wbg.png" rel="icon">
+  <link href="img/Anantaa_vert_wbg.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .btn-getstarted, .cta-btn, .btn-space {
+        background: linear-gradient(45deg, #007bff, #00d4ff);
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-getstarted:hover, .cta-btn:hover, .btn-space:hover {
+        background: linear-gradient(45deg, #0056b3, #0099cc);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-getstarted:active, .cta-btn:active, .btn-space:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        border-radius: 20px;
+        border: 1px solid #007bff;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.2s;
+    }
+
+    .form-control:focus {
+        border-color: #0056b3;
+        box-shadow: 0 0 6px rgba(0, 123, 255, 0.5);
+    }
+
+    .btn-primary {
+        background: linear-gradient(45deg, #007bff, #00d4ff);
+        border: none;
+        border-radius: 25px;
+        font-weight: bold;
+        padding: 10px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary:hover {
+        background: linear-gradient(45deg, #0056b3, #0099cc);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-primary:active {
+        transform: translateY(0);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      background-color: rgba(255, 255, 255, 0.774);
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .card-body {
+    background-color: rgba(255, 255, 255, 0.774);
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .list-unstyled li {
+    font-size: 1rem;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+  }
+
+  .list-unstyled li:hover {
+    color: rgb(255, 116, 2);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 991px) {
+    .card-body {
+      padding: 1.5rem;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+    }
+
+    .card-text {
+      font-size: 0.9rem;
+    }
+
+    .list-unstyled li {
+      font-size: 0.9rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .card-body {
+      padding: 1rem;
+    }
+
+    .card-title {
+      font-size: 1.125rem;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+    }
+
+    .list-unstyled li {
+      font-size: 0.85rem;
+    }
+  }
+  /* Styling the feature list to look like a card */
+  .card {
+  background-color: rgba(255, 255, 255, 0.774); /* Semi-transparent background */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  margin-bottom: 30px;
+  width: calc(92% + 40px); /* Increases width without overlapping (adds extra width) */
+  max-width: 800px; /* Optional: limit the maximum width */
+  margin-left: auto; /* Center the card horizontally */
+  margin-right: auto; /* Center the card horizontally */
+}
+
+
+
+
+</style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <img src="img/Anantaa_hori_wbg-1.png" alt="">
+       
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#services">Services</a></li>
+         <!--  <li><a href="#pricing">Pricing</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li> -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Login / Register Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login / Register</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <!-- Tabs Navigation -->
+                  <ul class="nav nav-tabs" id="loginRegisterTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="login-tab" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">Login</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="register-tab" data-bs-toggle="tab" data-bs-target="#register" type="button" role="tab" aria-controls="register" aria-selected="false">Register</button>
+                      </li>
+                  </ul>
+                  <div class="tab-content" id="loginRegisterTabContent">
+                      <!-- Login Form -->
+                      <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+                          <form>
+                              <div class="mb-3 mt-3">
+                                  <label for="login-email" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="login-email" placeholder="Enter your email">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="login-password" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
+                              </div>
+                              <button type="submit" class="btn btn-primary w-100">Login</button>
+                          </form>
+                      </div>
+                      <!-- Register Form -->
+                      <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+                          <form>
+                              <div class="mb-3 mt-3">
+                                  <label for="register-name" class="form-label">Full Name</label>
+                                  <input type="text" class="form-control" id="register-name" placeholder="Enter your full name">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="register-email" class="form-label">Email address</label>
+                                  <input type="email" class="form-control" id="register-email" placeholder="Enter your email">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="register-password" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="register-password" placeholder="Enter your password">
+                              </div>
+                              <div class="mb-3">
+                                  <label for="register-confirm-password" class="form-label">Confirm Password</label>
+                                  <input type="password" class="form-control" id="register-confirm-password" placeholder="Confirm your password">
+                              </div>
+                              <button type="submit" class="btn btn-primary w-100">Register</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+<!-- Hero Section -->
+<section id="hero" class="hero section">
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative" data-aos="zoom-out" style="height: 100vh;">
+
+      <h1 style="color: rgb(255, 255, 255); text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+          Anantaa Infinite Possibilities
+      </h1>
+      <h1 style="color: rgb(255, 255, 255); text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+          Advancing Space Technology Through Innovation
+      </h1>
+      <p style="color: rgb(255, 255, 255); text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);">
+          <b>India's Premier Space Technology Marketplace & Nuclear Propulsion Research Center.</b>
+      </p>
+
+      <!-- Buttons for CTA -->
+      <!-- <div class="d-flex justify-content-center">
+          <a href="#" class="btn-get-started">Get Started</a>
+          <a href="#" class="btn-watch-video">
+              <i class="fas fa-play"></i> Watch Video
+          </a>
+      </div> -->
+
+  </div>
+</section>
+
+    
+    <!-- /Hero Section -->
+
+    <section id="about" class="about section">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center justify-content-between">
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="container section-title" data-aos="fade-up">
+              <h2 style="color: rgb(255, 116, 2);"><b>About Us</b></h2>
+            </div>
+            <h2 style="color: rgb(255, 116, 2);" class="about-title">Mission</h2>
+            <p style="color: rgb(255, 255, 255);" class="about-description">To accelerate space technology advancement through innovative marketplace solutions and groundbreaking propulsion research</p>
+            <h2 style="color: rgb(255, 116, 2);">Vision</h2>
+            <p style="color: rgb(255, 255, 255);" class="about-description">Leading India's space technology revolution through innovation and collaboration</p>
+            <div class="row feature-list-wrapper">
+              <!-- Leadership -->
+              <div class="col-md-6">
+                <div class="card">
+                  <ul class="feature-list">
+                    <h2 style="color: rgb(255, 116, 2);">Leadership</h2>
+                    <p style="color: rgb(0, 0, 0);">Executive Team</p>
+                    <li><i class="bi bi-check-circle-fill"></i> Chief Executive Officer</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Chief Technology Officer</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Head of Research</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Director of Operations</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Chief Science Officer</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Achievements -->
+              <div class="col-md-6">
+                <div class="card">
+                  <ul class="feature-list">
+                    <h2 style="color: rgb(255, 116, 2);">Achievements</h2>
+                    <p style="color: rgb(7, 7, 7);">Recognition & Certifications</p>
+                    <li><i class="bi bi-check-circle-fill"></i>Industry Awards</li>
+                    <li><i class="bi bi-check-circle-fill"></i>ISO Certifications</li>
+                    <li><i class="bi bi-check-circle-fill"></i> ISRO Approvals</li>
+                    <li><i class="bi bi-check-circle-fill"></i> Research Patents</li>
+                    <li><i class="bi bi-check-circle-fill"></i> International Recognition</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Image -->
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="overlay"></div>
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="img/space/mission.jpg" alt="Business Meeting" class="img-fluid main-image rounded-4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+     <!-- End Section Title -->
+
+      <div class="container">
+        <div class="container section-title" data-aos="fade-up">
+          <h2 style="color: rgb(255, 116, 2);">Features</h2>
+        </div>
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                <h4>Marketplace & Highlights</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                <h4>R&D Excellence</h4>
+              </a><!-- End tab nav item -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                <h4>Latest News</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
+        </div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane active fade show" id="features-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3 style="color: rgb(255, 116, 2);">Marketplace & Highlights</h3>
+                <!-- <p class="fst-italic">
+                 
+                </p> -->
+                <ul>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Recent Developments</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span> Industry Updates</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Research Breakthroughs</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Partnership Announcements</span></li>
+
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="img/space/space.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3 style="color: rgb(255, 116, 2);">R&D Excellence</h3>
+               
+                <ul>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Nuclear Propulsion Research</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span> Advanced Testing Facilities</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>International Collaborations</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span> Innovation Hub</span></li>
+  </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="img/space/space_1.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="features-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3 style="color: rgb(255, 116, 2);">Latest News</h3>
+                <ul>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Recent Developments</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Industry Updates</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Research Breakthroughs</span></li>
+                  <li style="color: rgb(255, 255, 255);"><i style="color: rgb(255, 255, 255);" class="bi bi-check2-all"></i> <span>Partnership Announcements</span></li>
+                </ul>
+               
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="img/space/space_2.jpg" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Features Cards Section -->
+    <section id="features-cards" class="features-cards section">
+
+      <div class="container">
+ <!-- Section Title -->
+ <div class="container section-title" data-aos="fade-up">
+  <h2 style="color: rgb(255, 116, 2);"><b>R&D DIVISION</b></h2>
+  
+</div><!-- End Section Title -->
+        <div class="row gy-3">
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="feature-box orange">
+              <img src="img/space/travel (2).png" width="50px" height="50px">
+              <h3 style="color: rgb(255, 116, 2);">Nuclear Propulsion Research</h3>
+              <p style="color: rgb(0, 0, 0);">Current Projects</p>
+              <ul style="list-style-type: none;">
+
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Thermal Propulsion Systems</span></li>
+                <li style="color: rgb(0, 0, 0);"><i  class="bi bi-check2-all"></i> <span>Material Science Research</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Safety Mechanisms</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Control Systems</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Integration Technologies</span></li>
+
+              </ul>
+            </div>
+          </div><!-- End Feature Borx-->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="feature-box blue">
+              <img src="img/space/travel (1).png" width="50px" height="50px">
+              <h3 style="color: rgb(255, 116, 2);">Research Facilities</h3>
+              <ul style="list-style-type: none;">
+
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Nuclear Materials Laboratory</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Thermal Testing Center</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Radiation Chamber</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Propulsion Test Beds</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Simulation Facility</span></li>
+
+              </ul>
+            </div>
+          </div><!-- End Feature Borx-->
+
+          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="feature-box blue">
+              <img src="img/space/space.png" width="50px" height="50px">
+              <h3 style="color: rgb(255, 116, 2);">Collaboration Opportunities</h3>
+              <p style="color: rgb(0, 0, 0);">Partnership Programs</p>
+              <ul style="list-style-type: none;">
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Research Institutions</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Industry Partners</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Government Agencies</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>International Collaborations</span></li>
+                <li style="color: rgb(0, 0, 0);"><i class="bi bi-check2-all"></i> <span>Academic Programs</span></li>
+
+              </ul>
+            </div>
+          </div><!-- End Feature Borx-->
+
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Cards Section -->
+
+<!-- Features 2 Section -->
+<section id="features-2" class="features-2 section" style="background-color: #f8f9fa;">
+  <!-- Section Title -->
+  <div class="container section-title text-center" data-aos="fade-up">
+    <h2 style="color: rgb(255, 116, 2);"><b>MARKETPLACE PLATFORM</b></h2>
+    <h4 style="color: #ffffff;">Your One-Stop Space Technology Marketplace</h4>
+    <p style="color: #ffffff;">Connecting quality vendors with verified buyers in space technology</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row">
+      <!-- Card 1 - For Buyers -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-lg border-light rounded" style="background-color: white; transition: transform 0.3s;">
+          <div class="card-body text-center p-4">
+            <h3 class="card-title" style="color: rgb(255, 116, 2);">For Buyers</h3>
+            <p class="card-text" style="color: #333;">Component Categories</p>
+            <ul class="list-unstyled">
+              <li style="color: #555;"><span>Satellite Systems</span></li>
+              <li style="color: #555;"><span>Propulsion Components</span></li>
+              <li style="color: #555;"><span>Electronic Systems</span></li>
+              <li style="color: #555;"><span>Testing Equipment</span></li>
+              <li style="color: #555;"><span>Software Solutions</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Card 1 -->
+
+      <!-- Card 2 - Services Available -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-lg border-light rounded" style="background-color: white; transition: transform 0.3s;">
+          <div class="card-body text-center p-4">
+            <h3 class="card-title" style="color: rgb(255, 116, 2);">Services Available</h3>
+            <ul class="list-unstyled">
+              <li style="color: #555;"><span>Technical Consultation</span></li>
+              <li style="color: #555;"><span>Integration Support</span></li>
+              <li style="color: #555;"><span>Testing Services</span></li>
+              <li style="color: #555;"><span>Certification Assistance</span></li>
+              <li style="color: #555;"><span>Training Programs</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Card 2 -->
+
+      <!-- Card 3 - Buyer Benefits -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-lg border-light rounded" style="background-color: white; transition: transform 0.3s;">
+          <div class="card-body text-center p-4">
+            <h3 class="card-title" style="color: rgb(255, 116, 2);">Buyer Benefits</h3>
+            <ul class="list-unstyled">
+              <li style="color: #555;"><span>Verified Suppliers</span></li>
+              <li style="color: #555;"><span>Quality Assurance</span></li>
+              <li style="color: #555;"><span>Competitive Pricing</span></li>
+              <li style="color: #555;"><span>Technical Support</span></li>
+              <li style="color: #555;"><span>Secure Transactions</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Card 3 -->
+
+      <!-- Card 4 - For Sellers -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-lg border-light rounded" style="background-color: white; transition: transform 0.3s;">
+          <div class="card-body text-center p-4">
+            <h3 class="card-title" style="color: rgb(255, 116, 2);">For Sellers</h3>
+            <p class="card-text" style="color: #333;">Vendor Services</p>
+            <ul class="list-unstyled">
+              <li style="color: #555;"><span>Listing Management</span></li>
+              <li style="color: #555;"><span>Order Processing</span></li>
+              <li style="color: #555;"><span>Inventory Control</span></li>
+              <li style="color: #555;"><span>Analytics Dashboard</span></li>
+              <li style="color: #555;"><span>Marketing Support</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Card 4 -->
+
+      <!-- Card 5 - Documentation Center -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="card h-100 shadow-lg border-light rounded" style="background-color: white; transition: transform 0.3s;">
+          <div class="card-body text-center p-4">
+            <h3 class="card-title" style="color: rgb(255, 116, 2);">Documentation Center</h3>
+            <ul class="list-unstyled">
+              <li style="color: #555;"><span>Technical Specifications</span></li>
+              <li style="color: #555;"><span>Compliance Guidelines</span></li>
+              <li style="color: #555;"><span>Quality Standards</span></li>
+              <li style="color: #555;"><span>Export Regulations</span></li>
+              <li style="color: #555;"><span>Safety Protocols</span></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- End Card 5 -->
+    </div><!-- End Row -->
+  </div><!-- End Container -->
+</section><!-- End Features 2 Section -->
+
+
+    
+    <!-- our Services Section -->
+    <section id="services" class="services section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: rgb(255, 116, 2);"><b>Our Services</b></h2>
+        </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-gear-fill"></i>
+              </div>
+              <div>
+                <h3>Technical Resources</h3>
+                <ul style="list-style-type: none;">
+                  <li><i class="bi bi-check2-all"></i> <span>White Papers</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Research Publications</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Technical Documents</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Industry Standards</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Best Practices</span></li>
+  
+                </ul> 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-bar-chart-fill"></i>
+              </div>
+              <div>
+                <h3>Market Insights</h3>
+                <ul style="list-style-type: none;">
+                  <li><i class="bi bi-check2-all"></i> <span> Industry Reports</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Market Analysis</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Trend Studies</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Technology Updates</span></li>
+  
+                </ul>                 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-suitcase-lg-fill"></i>
+              </div>
+              <div>
+                <h3>Consultation Services</h3>
+                <ul style="list-style-type: none;">
+                  <li><i class="bi bi-check2-all"></i> <span>Technical Advisory</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Project Planning</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Design Review</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Compliance Guidance</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Risk Assessment</span></li>
+  
+                </ul> 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-gear-wide-connected"></i>
+              </div>
+              <div>
+                <h3>Technical Services</h3>
+                <p>Testing & Validation</p>
+                <ul style="list-style-type: none;">
+                  <li><i class="bi bi-check2-all"></i> <span>Component Testing</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>System Integration</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Performance Analysis</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Safety Certification</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Quality Assurance</span></li>
+  
+                </ul> 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-file-earmark"></i>
+              </div>
+              <div>
+                <h3>Business Services</h3>
+                <p>Supply Chain Solutions</p>
+                <ul style="list-style-type: none;">
+                  <li><i class="bi bi-check2-all"></i> <span>Vendor Management</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Logistics Support</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Import/Export Assistance</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Documentation Support</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span>Inventory Management</span></li>
+  
+                </ul> 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <img src="img/space/travel.png" width="50px" height="50px">
+           </div>
+              <div>
+                <h3>Space Tourism</h3>
+                <p>Embark on the ultimate adventure with anantaa.space, your gateway to the stars. We partner with leading space tourism providers to turn your dreams of space travel into reality.</p>
+                 
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-rocket-fill"></i>
+              </div>
+              <div>
+                <h3>Experience the Final Frontier</h3>
+                <p>Step beyond Earth's boundaries and join the exclusive ranks of space travelers. Whether you're seeking a sub-orbital flight with spectacular views of our blue planet, or planning a stay at a commercial space station, anantaa.
+                  space connects you with verified space tourism operators offering various celestial experiences.</p>
+                
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-ubuntu"></i>
+              </div>
+              <div>
+                <h3>Our Space Tourism Services</h3>
+                <p>Sub-orbital Flights</b>Experience weightlessness and witness the curvature of Earth during brief space journeys
+                <br>  <b>Orbital Adventures</b> Extended stays in Earth's orbit with comprehensive training programs
+                  <br>    <b>Space Station Visits</b>Book future accommodations in commercial space stations
+                  <br>   <b>Customized Space Experiences</b>Tailored packages combining multiple space tourism activities
+                    <span>Inventory Management</span>
+      </p>
+              
+                 
+              
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          
+         <!--  <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card d-flex">
+              <div class="icon flex-shrink-0">
+                <img src="img/space/astronaut.png" width="50px" height="50px">
+
+              </div>
+              <div>
+                <h3>Book Your Space Journey</h3>
+                <p> Ready to make history? Contact our space tourism specialists to:
+               <br>Explore available flight options and dates
+               <br>    Discuss medical requirements and training programs
+                <br>  Begin your journey to space.
+                <br>  Review pricing and payment plans
+                <br> All space tourism experiences are subject to operator availability, medical clearance, and regulatory approval. Prices vary based on chosen experience and operator.
+                </p>
+              
+              </div>
+            </div>
+          </div> --><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+<!-- Call To Action 2 Section -->
+<section id="call-to-action-2" class="call-to-action-2 section dark-background">
+  <div class="container">
+    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-8">
+        <div class="card shadow-lg p-5 rounded-3 border-0 bg-white text-center" style="background-color: rgba(255, 255, 255, 0.774); transition: all 0.3s ease-in-out;">
+          <div class="card-body">
+            <h3 class="card-title mb-3" style="color: rgb(255, 116, 2); font-weight: bold; ">
+              Book Your Space Journey <br>Ready to make history?
+            </h3>
+            <p class="text-black mb-4">Contact our space tourism specialists to:</p>
+
+            <div class="container">
+              <div class="row justify-content-center">
+                <!-- First Row -->
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="d-flex align-items-center text-black">
+                    <i class="bi bi-check2-all me-2"></i>
+                    <span>Explore available flight options and dates</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="d-flex align-items-center text-black">
+                    <i class="bi bi-check2-all me-2"></i>
+                    <span>Discuss medical requirements and training programs</span>
+                  </div>
+                </div>
+                
+                <!-- Second Row -->
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="d-flex align-items-center text-black">
+                    <i class="bi bi-check2-all me-2"></i>
+                    <span>Begin your journey to space.</span>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="d-flex align-items-center text-black">
+                    <i class="bi bi-check2-all me-2"></i>
+                    <span>Review pricing and payment plans</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+<br>
+<br>
+            <p class="text-black mb-4">
+              <b>Note:</b> All space tourism experiences are subject to operator availability, medical clearance, and regulatory approval.
+              Prices vary based on choosen experience and operator.
+            </p>
+<br>
+            <a class="btn btn-dark btn-lg" href="#" data-bs-toggle="modal" data-bs-target="#appointmentModal" style="padding: 12px 30px; font-size: 16px;">
+              Book Your Space Journey
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- /Call To Action 2 Section -->
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="appointmentModalLabel">Book Your Space Journey</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="date" class="form-label">Preferred Date</label>
+                      <input type="date" class="form-control" id="date">
+                  </div>
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Additional Notes</label>
+                      <textarea class="form-control" id="message" rows="3" placeholder="Any special requests or notes"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
+
+    <section id="contact" class="contact section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 style="color: rgb(255, 116, 2);"><b>Get Started </b></h2>
+        <p  style="color: rgb(255, 255, 255);">Take the first step toward your space adventure. Contact us to schedule a consultation with our space tourism specialists.
+
+        </p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-5">
+            <div class="info-box" data-aos="fade-up" data-aos-delay="200">
+              <h1 style="color: rgb(0, 0, 0);">Why Choose Anantaa.Space?</h1>
+
+
+                <ul style="list-style-type: none;">
+                  <li style="color: #000; font-size: 1.2em;"><i style="color: rgb(0, 0, 0);" class="bi bi-check2-all"></i> <b>Verified Operators:</b><span>We partner exclusively with certified space tourism companies
+                    </span></li>
+                  <li style=" color: #000;font-size: 1.2em;"><i style="color: rgb(0, 0, 0);" class="bi bi-check2-all"></i> <b>End-to-End Service:</b><span>From initial inquiry to pre-flight training coordination
+                    </span></li>
+                    <li style="color: #000; font-size: 1.2em;"><i style="color: rgb(0, 0, 0);" class="bi bi-check2-all"></i> <b>Flexible Booking:</b><span>Secure your space journey with customizable payment plans
+                    </span></li>
+                    <li style="color: #000; font-size: 1.2em;"><i style="color: rgb(8, 8, 8);" class="bi bi-check2-all"></i> <b>Expert Guidance:</b><span> Personal consultation with space tourism specialists
+                    </span></li>
+                    <li style="color: #000; font-size: 1.2em;"><i style="color: rgb(0, 0, 0);" class="bi bi-check2-all"></i> <b>Safety First:</b><span>    All experiences meet stringent safety and regulatory requirements
+                    </span></li>
+                  </ul>    
+            
+
+             <!--  <div class="info-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="content">
+                  <h4>Phone Number</h4>
+                  <p>+1 5589 55488 55</p>
+                  <p>+1 6678 254445 41</p>
+                </div>
+              </div>
+ -->
+             <!--  <div class="info-item" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box">
+                  <i class="bi bi-envelope"></i>
+                </div>
+                <div class="content">
+                  <h4>Email Address</h4>
+                  <p>info@example.com</p>
+                  <p>contact@example.com</p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="contact-form" data-aos="fade-up" data-aos-delay="300">
+              <h3><i class="bi bi-phone-fill"></i>Contact Us</h3>
+
+              <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+                <div class="row gy-4">
+
+                  <div class="col-md-6">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+
+                  <div class="col-md-6 ">
+                    <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                  </div>
+
+                  <div class="col-12">
+                    <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                  </div>
+
+                  <div class="col-12 text-center">
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+
+                </div>
+              </form>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Anantaa Infinite Possibilities</span>
+            
+          </a>
+          <p>Headquarters:
+            Kanada Vyoma Tech
+            Bangalore Space Tech Park
+            Karnataka, India
+            </p>
+          <div class="footer-contact pt-3">
+            <img src="img/Anantaa_vert_wbg-1.png" alt="Anantaa Infinite Possibilities" width="150px" height="150px">
+          </div>
+
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-globe"></i></a>
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href=""><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><i class="bi bi-globe"></i>Quick Links</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press Room</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><i class="bi bi-phone-fill"></i>Business Inquiries</h4>
+          <p><strong>Email:</strong> <span>business@kanadavyoma.tech</span></p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><i class="bi bi-phone-fill"></i>Technical Support</h4>
+          <p><strong>Email:</strong> <span>support@kanadavyoma.tech</span></p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4><i class="bi bi-phone-fill"></i>R&D Collaboration</h4>
+          <p><strong>Email:</strong> <span>research@kanadavyoma.tech</span></p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy; <span>Copyright</span> <span id="year"></span><strong class="px-1 sitename">ANANTAA Infinite Possibilities</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+       
+        Designed by <a href="https://jaibharatsolutions.com/">Jai Bharat Solutions</a>
+      </div>
+    </div>
+    <script>
+      // Dynamically update the year
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
